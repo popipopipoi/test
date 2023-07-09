@@ -5,8 +5,8 @@ public class RandomMaker {
 
     //최소값부터 최대값까지 범위의 난수 반환함
     public int randomNumber(int min, int max) {
-        int random = (int) (Math.random() * ((max - min)+1) + min);
-        return random;
+
+        return (int) (Math.random() * ((max - min)+1) + min);
     }
 
    //인자의 길이 만큼 랜덤한 대문자 알파벳으로 이루어진 문자열을 반환함
