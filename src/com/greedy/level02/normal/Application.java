@@ -4,10 +4,18 @@ public class Application {
 
     public static void main(String[] args) {
 
-        //최소값부터 최대값까지 범위의 난수 반환함
         RandomMaker app2 = new RandomMaker();
 
-        int random = (int) (Math.random() * 101) + 1;
-        System.out.println(random);
+        //최소값부터 최대값까지 범위의 난수 반환함
+
+        System.out.println(app2.randomNumber(-150, 150));
+
+        //인자의 길이 만큼 랜덤한 대문자 알파벳으로 이루어진 문자열을 반환함
+
+        //가위, 바위, 보 중 한가지를 반환함
+        System.out.println(app2.rockPaperScissore());
+
+        //동전의 앞면, 뒷면 중 한 가지를 반환함
+        System.out.println(app2.tossCoin());
     }
 }
